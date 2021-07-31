@@ -9,4 +9,4 @@ def do_something(message, plugs=[]):
 
 def do_this(message,plugs=[]):
    print("Do this!",message)
-   return "Do this: "+message
+   return "Do this: "+str(message)
