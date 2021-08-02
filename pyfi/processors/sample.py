@@ -1,5 +1,6 @@
 
 def do_something(message, plugs=[]):
+   print("PLUGS:",plugs)
    print("DO SOMETHING ELSE!")
    print("Message:",message)
    plugs['pyfi.queue2'] = ["Message "+message]
