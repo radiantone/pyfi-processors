@@ -1,6 +1,4 @@
-print("worker:",worker)
 
-@worker.app.task(name='pyfi.processors.sample.do_something')
 def do_something(message, plugs=[]):
    print("DO SOMETHING ELSE!")
    print("Message:",message)
