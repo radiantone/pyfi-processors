@@ -9,6 +9,6 @@ def do_something(message, plugs={}, output={}):
    output['data'] = {'key':'result'}
    return "Message:",message
 
-def do_this(message,plugs=[]):
+def do_this(message,plugs={}, output={}):
    print("Do this!",message)
    return "Do this: "+str(message)
