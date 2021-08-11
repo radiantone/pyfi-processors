@@ -1,5 +1,5 @@
 
-def do_something(message, plugs={}, output={}):
+def do_something(message, plugs={}, output={}, **kwargs):
    print("PLUGS:",plugs)
    print("DO SOMETHING ELSE!")
    print("Message:",message)
@@ -17,7 +17,7 @@ def do_something(message, plugs={}, output={}):
 
    return "Message:",message
 
-def do_this(message,plugs={}, output={}):
+def do_this(message,plugs={}, output={},**kwargs):
    print("Do this!",message)
 
    return "Do this: "+str(message)
