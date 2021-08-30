@@ -25,7 +25,7 @@ setup(
     author='Darren Govoni',
     author_email='darren@ontrenet.com',
     url='https://github.com/radiantone/pyfi-processor',
-    packages=['pyfi', 'pyfi.processors'],
+    packages=['pyfi.processors'],
     include_package_data=True,
     python_requires=">=3.8.*",
     install_requires=[
