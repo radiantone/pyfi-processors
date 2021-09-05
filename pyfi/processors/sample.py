@@ -1,5 +1,5 @@
 
-def do_something(message, plugs={}, output={}, **kwargs):
+def do_something(message, *args, plugs={}, output={}, **kwargs):
    print("PLUGS:",plugs)
    print("DO SOMETHING ELSE!")
    print("Message:",message)
@@ -15,9 +15,10 @@ def do_something(message, plugs={}, output={}, **kwargs):
    output['result'] = "The result!"
    output['data'] = {'key':'result'}
 
-   return "Message:",message
+   argstr = ' '.join(args)
+   return "Message:"+message+argstr
 
-def do_this(message,plugs={}, output={},**kwargs):
+def do_this(message, *args, plugs={}, output={},**kwargs):
    print("Do this!",message)
 
    return "Do this: "+str(message)
