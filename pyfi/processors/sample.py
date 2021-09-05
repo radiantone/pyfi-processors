@@ -13,7 +13,7 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
    output['data'] = {'key':'result'}
 
    argstr = ' '.join(args)
-   return "Message:"+message+argstr
+   return "Message:"+str(message)+argstr
 
 def do_this(message, *args, plugs={}, output={},**kwargs):
    print("Do this!",message)
