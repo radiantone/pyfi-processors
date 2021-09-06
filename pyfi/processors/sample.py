@@ -16,6 +16,7 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
    return "Message:"+str(message)+argstr
 
 def do_this(message, *args, plugs={}, output={},**kwargs):
-   print("Do this!",message)
+   print("Do this!", message)
 
-   return "Do this: "+str(message)
+   argstr = ' '.join(args)
+   return "Do this: "+str(message)+argstr
