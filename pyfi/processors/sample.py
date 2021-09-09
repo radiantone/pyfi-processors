@@ -4,10 +4,7 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
    print("DO SOMETHING ELSE!")
    print("Message:",message)
 
-   plugs['pyfi.queue3'] = []
-   plugs['pyfi.queue2'] = []
-   if 'pyfi.queue2' in plugs and 'pyfi.queue3' in plugs: 
-       plugs['pyfi.queue2'] = ["Message "+str(message)]
+   plugs['plug1'] = ["Message "+str(message)]
 
    output['result'] = "The result!"
    output['data'] = {'key':'result'}
