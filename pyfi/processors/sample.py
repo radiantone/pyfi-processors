@@ -1,5 +1,7 @@
 
 def do_something(message, *args, plugs={}, output={}, **kwargs):
+   from random import randrange
+
    print("PLUGS:",plugs)
    print("DO SOMETHING ELSE!")
    print("Message:",message)
@@ -10,7 +12,10 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
    output['data'] = {'key':'result'}
 
    argstr = ' '.join(args)
-   return "TEXT:"+str(message)+argstr
+   message = "TEXT:"+str(message)+argstr
+   graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':randrange(10)}
+   return { 'message': message, 'graph': graph}
+
 
 def do_this(message, *args, plugs={}, output={},**kwargs):
    print("Do this!", message)
