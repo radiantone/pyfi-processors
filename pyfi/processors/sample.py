@@ -13,15 +13,20 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
 
    argstr = ' '.join(args)
    message = "TEXT:"+str(message)+argstr
-   graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':randrange(10)}
+   graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':randrange(10) }
    return { 'message': message, 'graph': graph}
 
 
 def do_this(message, *args, plugs={}, output={},**kwargs):
+   from random import randrange
+
    print("Do this!", message)
 
    argstr = ' '.join(args)
-   return "Do this String: "+str(message)+argstr
+   message = "Do this String: "+str(message)+argstr
+   graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'distance', 'value':randrange(50) }
+   return { 'message': message, 'graph': graph}
+
 
 def do_that(message, *args, plugs={}, output={},**kwargs):
    print("Do THAT!", message)
