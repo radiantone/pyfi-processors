@@ -1,5 +1,6 @@
 
 def do_something(message, *args, plugs={}, output={}, **kwargs):
+   """ do_something """
    from random import randrange
 
    print("PLUGS:",plugs)
