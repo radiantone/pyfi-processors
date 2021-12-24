@@ -1,4 +1,14 @@
 
+def emit_one(*args, plugs={}, output={}, **kwargs):
+   return 1
+
+def emit_five(*args, plugs={}, output={}, **kwargs):
+   return 5
+
+def emit_add(one, five, *args, plugs={}, output={}, **kwargs):
+   print("EMIT_ADD: ",int(ont)+int(five))
+   return int(ont)+int(five)
+
 def do_something(message, *args, plugs={}, output={}, **kwargs):
    """ do_something """
    from random import randrange
