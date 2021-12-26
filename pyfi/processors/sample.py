@@ -5,6 +5,9 @@ def emit_one(*args, plugs={}, output={}, **kwargs):
 def emit_five(*args, plugs={}, output={}, **kwargs):
    return 5
 
+def add_two(one, two, *args, plugs={}, output={}, **kwargs):
+   return int(one)+int(two)
+
 def emit_add(one, five, *args, plugs={}, output={}, **kwargs):
    print("EMIT_ADD: ",int(ont)+int(five))
    return int(ont)+int(five)
