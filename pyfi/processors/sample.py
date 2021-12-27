@@ -1,8 +1,10 @@
 
-def emit_one(*args, plugs={}, output={}, **kwargs):
+def emit_one(one, *args, plugs={}, output={}, **kwargs):
+   if one: return one
    return 1
 
-def emit_five(*args, plugs={}, output={}, **kwargs):
+def emit_two(two, *args, plugs={}, output={}, **kwargs):
+   if two: return two
    return 5
 
 def add_two(one, two, *args, plugs={}, output={}, **kwargs):
