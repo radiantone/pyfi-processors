@@ -30,7 +30,7 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
    argstr = ' '.join(args)
    message = "TEXT:"+str(message)+argstr
    graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':randrange(10) }
-   return { 'message': message, 'graph': graph}
+   return { message': message, 'graph': graph}
 
 
 def do_this(message, *args, plugs={}, output={},**kwargs):
