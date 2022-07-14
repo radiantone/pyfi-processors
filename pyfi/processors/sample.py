@@ -11,8 +11,8 @@ def add_two(one, two, *args, plugs={}, output={}, **kwargs):
    return int(one)+int(two)
 
 def emit_add(one, five, *args, plugs={}, output={}, **kwargs):
-   print("EMIT_ADD: ",int(ont)+int(five))
-   return int(ont)+int(five)
+   print("EMIT_ADD: ",int(one)+int(five))
+   return int(one)+int(five)
 
 def do_something(message, *args, plugs={}, output={}, **kwargs):
    """ do_something """
