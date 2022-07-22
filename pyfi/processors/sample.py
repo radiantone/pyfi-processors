@@ -30,6 +30,7 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
    argstr = ' '.join(args)
    message = "TEXT:"+str(message)+argstr
    graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':randrange(10) }
+   print("doSomething: GRAPH COMPLETE!")
    #raise Exception()
    return { 'message': message, 'graph': graph}
 
@@ -42,6 +43,7 @@ def do_this(message, *args, plugs={}, output={},**kwargs):
    argstr = ' '.join(args)
    message = "Do this String: "+str(message)+argstr
    graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'distance', 'value':randrange(50) }
+   print("doThis: GRAPH CREATED!")
    return { 'message': message, 'graph': graph}
 
 
