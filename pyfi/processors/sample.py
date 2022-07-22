@@ -29,8 +29,10 @@ def do_something(message, *args, plugs={}, output={}, **kwargs):
 
    argstr = ' '.join(args)
    message = "TEXT:"+str(message)+argstr
-   graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':randrange(10) }
+   value = randrange(10)
+   graph = { 'tag': {'name':'tagname','value':'tagvalue'}, 'name':'temperature', 'value':value }
    print("doSomething: GRAPH COMPLETE!")
+   print("doSomething: VALUE",value)
    #raise Exception()
    return { 'message': message, 'graph': graph}
 
