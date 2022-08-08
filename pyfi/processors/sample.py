@@ -1,5 +1,6 @@
 
 def emit_one(one, *args, plugs={}, output={}, **kwargs):
+   """ emit one """
    if one: return one
    return 1
 
