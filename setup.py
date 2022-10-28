@@ -17,7 +17,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 # package configuration - for reference see:
 # https://setuptools.readthedocs.io/en/latest/setuptools.html#id9
 setup(
-    name='pyfi processor',
+    name='ext processor',
     description='Example processors',
     long_description='',
     long_description_content_type='text/markdown',
