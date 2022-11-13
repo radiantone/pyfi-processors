@@ -4,6 +4,11 @@ def open_url(url):
     
     return json.loads(open_url(url).read())
 
+def fetch():
+    url = "http://worldtimeapi.org/api/ip"
+
+    return open_url(url)
+
 def emit_one(one, *args, plugs={}, output={}, **kwargs):
     """ emit one """
     if one: return one
