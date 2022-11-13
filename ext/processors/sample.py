@@ -1,7 +1,8 @@
 def open_url(url):
     from pyodide.http import open_url
+    import json
     
-    return open_url(url).read()
+    return json.loads(open_url(url).read())
 
 def emit_one(one, *args, plugs={}, output={}, **kwargs):
     """ emit one """
