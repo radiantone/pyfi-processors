@@ -7,8 +7,13 @@ def open_url(url):
 def fetch():
     url = "http://worldtimeapi.org/api/ip"
 
+    plugs['route A'] = {'some':'data'}
     return open_url(url)
+    
+def add_data(data):
+    data['add'] = 'newdata'
 
+    return data
 def emit_one(one, *args, plugs={}, output={}, **kwargs):
     """ emit one """
     if one: return one
