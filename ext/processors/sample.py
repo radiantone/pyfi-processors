@@ -14,6 +14,7 @@ def add_data(data):
     data['add'] = 'newdata'
 
     return data
+
 def emit_one(one, *args, plugs={}, output={}, **kwargs):
     """ emit one """
     if one: return one
