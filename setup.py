@@ -27,7 +27,7 @@ setup(
     url='https://github.com/radiantone/pyfi-processor',
     packages=['ext.processors'],
     include_package_data=True,
-    python_requires=">=3.8.*",
+    python_requires=">=3.10",
     install_requires=[
     ],
     zip_safe=False,
