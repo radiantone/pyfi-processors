@@ -1,8 +1,8 @@
 def open_url(url):
-    from pyodide.http import open_url
+    from pyodide.http import open_url as openurl
     import json
     
-    return json.loads(open_url(url).read())
+    return json.loads(openurl(url).read())
 
 def fetch():
     url = "http://worldtimeapi.org/api/ip"
